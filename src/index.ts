@@ -12,7 +12,7 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin: 'http://localhost:5173', // or whatever your frontend port is
+  origin: true, // or whatever your frontend port is
   credentials: true
 }));
 const PORT=process.env.PORT || 5000;
