@@ -10,9 +10,10 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+const allowedOrigins = ["http://localhost:5173"];
 
 app.use(cors({
-  origin: true, // or whatever your frontend port is
+  origin: allowedOrigins, // or whatever your frontend port is
   credentials: true
 }));
 const PORT=process.env.PORT || 5000;
