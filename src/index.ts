@@ -12,7 +12,8 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://yourbrain.vercel.app"
+  "https://yourbrain.vercel.app",
+  "https://vercel.com/akhand0ps-projects/backend-brain/D6pi2MrvfpeTkozNQmKqTtqiWkQx"
 ];
 
 app.use(cors({
@@ -28,7 +29,6 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-// ✅ Add this to respond to preflight requests
 app.options("*", cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
