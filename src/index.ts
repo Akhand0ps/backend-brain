@@ -13,24 +13,24 @@ app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",
   "https://yourbrain.vercel.app",
-  // These are often deployment-specific. For production, only include your main domains.
   "https://vercel.com/akhand0ps-projects/brain-frontend-ha7o/Gy8TCo5vinTcmZjkwhzRRjDfmD8E",
   "https://brain-frontend-ha7o-git-main-akhand0ps-projects.vercel.app/"
 ];
 
-// THIS IS CRUCIAL: Apply global CORS middleware EARLY.
-// It will handle preflight OPTIONS requests automatically.
+
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
+      console.log("nhi chla");
       callback(new Error("Not allowed by CORS"), false);
+      
     }
   },
   credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Explicitly list OPTIONS
-  allowedHeaders: ["Content-Type", "Authorization"] // Explicitly list headers needed for preflight
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 
