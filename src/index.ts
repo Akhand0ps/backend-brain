@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = ["https://brain-frontend-ha7o.vercel.app/"];
+const allowedOrigins = ["https://yourbrain.vercel.app/"];
 
 app.use(cors({
   origin: allowedOrigins, // or whatever your frontend port is
