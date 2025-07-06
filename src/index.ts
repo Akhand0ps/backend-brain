@@ -13,7 +13,7 @@ app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",
   "https://yourbrain.vercel.app",
-  "https://vercel.com/akhand0ps-projects/backend-brain/D6pi2MrvfpeTkozNQmKqTtqiWkQx"
+  "https://vercel.com/akhand0ps-projects/brain-frontend-ha7o/Gy8TCo5vinTcmZjkwhzRRjDfmD8E"
 ];
 
 app.use(cors({
