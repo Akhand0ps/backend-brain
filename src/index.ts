@@ -10,10 +10,19 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = ["https://yourbrain.vercel.app"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://yourbrain.vercel.app"
+];
 
 app.use(cors({
-  origin: allowedOrigins, // or whatever your frontend port is
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"), false);
+    }
+  },
   credentials: true
 }));
 const PORT=process.env.PORT || 5000;
