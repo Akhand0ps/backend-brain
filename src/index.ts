@@ -14,7 +14,8 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://yourbrain.vercel.app",
   "https://vercel.com/akhand0ps-projects/brain-frontend-ha7o/Gy8TCo5vinTcmZjkwhzRRjDfmD8E",
-  "https://brain-frontend-ha7o-git-main-akhand0ps-projects.vercel.app/"
+  "https://brain-frontend-ha7o-git-main-akhand0ps-projects.vercel.app/",
+  "https://brain-frontend-gilt.vercel.app/"
 ];
 
 
