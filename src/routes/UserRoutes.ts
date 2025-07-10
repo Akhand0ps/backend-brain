@@ -37,6 +37,7 @@ const router = express.Router();
 // router.use(cors(corsOptions)); // <--- Add this line here
 
 // Now define your actual routes
+
 router.post("/register", signup);
 router.post("/login", login);
 router.get("/me", UserAuth, me);
