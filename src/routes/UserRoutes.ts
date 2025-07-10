@@ -13,7 +13,7 @@ const router = express.Router();
 //   // Note: The following two Vercel URLs are typically for specific deployments
 //   // and might change. For production, focus on the main domain.
 //   "https://vercel.com/akhand0ps-projects/brain-frontend-ha7o/Gy8TCo5vinTcmZjkwhzRRjDfmD8E",
-//   "https://brain-frontend-ha7o-git-main-akhand0ps-projects.vercel.app/"
+//   "https://brain-frontend-ha7o-git-main-akhand0ps-projects.vercel.app"
 // ];
 
 // // Configure CORS options specifically for these routes
